@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #27251f;
+  background: #f2f0e9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --paper: #fbfaf6;
+  --ink: #27251f;
+  --muted: #827f75;
+  --line: #e5e2d9;
+  --olive: #536943;
+  --olive-dark: #384b30;
+  --coral: #ca694f;
+  --mono: 'DM Mono', Consolas, monospace;
+  --display: 'Playfair Display', Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 360px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 82% 2%, rgba(218, 208, 178, .22), transparent 33rem),
+    repeating-linear-gradient(0deg, rgba(70, 66, 49, .018) 0, rgba(70, 66, 49, .018) 1px, transparent 1px, transparent 5px),
+    #f2f0e9;
+}
+
+button, input, select { font: inherit; }
+button { color: inherit; }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid #64794f; outline-offset: 2px; }
+::selection { color: #fff; background: #536943; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
